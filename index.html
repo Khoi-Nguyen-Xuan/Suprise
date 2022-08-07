@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<style> 
+
+
+		*{
+			margin: 0;
+		}
+
+		input[type=text] {
+				width: 50%;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 25px;
+				background-color: white;
+				background-image: url('https://truturf.com/wp-content/uploads/2019/02/698956-icon-111-search-512.png');
+				background-position: 10px 10px; 
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 40px;
+
+			}
+
+
+		.wrapper{
+
+			background-color: bisque;
+			height: 2000px;
+			width: 100%;
+			position: relative;
+		}
+
+
+		.menu{
+
+			background-color: burlywood;
+			height: 70px;
+			width: 100%;
+			position: absolute;
+
+		}
+
+		.searching 
+		{
+			width: 100%;
+			position: absolute;
+			height: 1000px;
+			transform: translateX(25%) translateY(20%);
+
+		}
+
+
+		h1 {
+ 			 text-shadow: 0 0 4px #0000FF;
+ 			 font-size: 40px;
+			}
+
+		h2{
+  			text-shadow: 0 0 3px #FF0000;
+			}
+
+
+
+		.nav {
+
+				list-style-type: none;
+				color: black;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+		}
+
+		.nav li {
+				display: inline-block;
+				color: black;
+				font-size: 30px;
+			padding: 20px;
+
+		}
+
+		.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: tomato;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: orangered}
+
+.button:active {
+  background-color: maroon;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+	.border1{
+		border: 10px;
+	}
+
+
+
+	</style>
+
+
+
+</head>
+
+
+<body>
+
+	<div class ="wrapper">
+
+
+		<div class ="menu">
+
+			<ul class ="nav">
+				<li><a href="#About"> Home </a></li>
+				<li><a href="#About"> About us </a></li>
+				<li><a href="#About"> Our service </a></li>
+				<li><a href="#About"> Contact us </a></li>
+
+			</ul>
+		</div>
+
+		<div class="searching">
+
+
+		<h1> Searching Machine </h1>
+		<br>
+		<form>
+		<input type="text" name="search" placeholder="Nhập câu hỏi vào đây...">
+		
+		</form>  
+		<br>
+
+		<button class ="button" onclick = "myWish()"><b> Tìm kiếm	</b> </button>
+		<br>
+		<br>
+
+		<script>
+
+		function myWish() {
+  			document.getElementById("clicked").innerHTML = "CHÚC MỪNG SINH NHẬT NGHĨA!!"
+ 						 }
+
+
+
+
+
+		</script>
+
+		<br> 	
+		<br> 
+		<div class ="border1">
+		<h2 style ="font-size: 50px; font-family:Sofia, sans-serif; transform:translateX(-5%)" id="clicked"> </h2>
+
+	
+		</div>
+		</div>
+
+
+
+	</div>
+
+
+
+
+</body>
+</html>
